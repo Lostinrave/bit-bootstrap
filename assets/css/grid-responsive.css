@@ -1,3 +1,7 @@
+body {
+  padding-top: 60px;
+}
+
 .style-1 del {
   color: rgba(255, 0, 0, 0.5);
   text-decoration: none;
@@ -20,16 +24,20 @@
 .style-1 ins {
   color: green;
   text-decoration: none;
-  padding: 1em 1em 1em .5em;
+  padding: 1em 1em 1em 0.5em;
 }
 
 .dropdown-parinktys {
   position: absolute !important;
-  top: 2%;
-  left: 70%;
+  top: 20px;
+  right: 10px;
 }
 
 .card {
   position: relative;
+}
+
+.opacity {
+  opacity: 0.9;
 }
 /*# sourceMappingURL=grid-responsive.css.map */

@@ -15,17 +15,9 @@
   </head>
   <body>
     <header>
-      <div class="container">
-        <div class="row justify-content-center align-content-center">
-          <nav
-            class="
-              navbar
-              fixed-top
-              navbar-expand-lg navbar-light
-              bg-light
-              opacity
-            "
-          >
+      <!-- <div class="container">
+        <div class="row justify-content-center align-content-center"> -->
+          <nav class="navbar navbar-expand-lg navbar-light bg-light ps-5 pe-5">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">BIT</a>
               <button
@@ -115,7 +107,380 @@
                       </li>
                     </ul>
                   </li>
+                  <li class="nav-item">
+                    <!-- Button trigger modal REGISTRACIJA Navbare -->
+                    <div class="d-lg-none">
+                      <a
+                        class="nav-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3"
+                      >
+                        Registracija
+                      </a>
+                    </div>
+
+                    <!-- REGISTRACIJOS Modal Navbare -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal3"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content p-0">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel3">
+                              Registracija
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container mt-5 mb-5">
+                              <div
+                                class="
+                                  row
+                                  d-flex
+                                  align-items-center
+                                  justify-content-center
+                                "
+                              >
+                                <div class="col-md-12">
+                                  <div class="card px-5 py-5">
+                                    <div class="form-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Email address"
+                                      />
+                                    </div>
+                                    <div class="form-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="User name"
+                                      />
+                                    </div>
+                                    <div class="form-input">
+                                      <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="password"
+                                      />
+                                    </div>
+                                    <a
+                                      class="mt-3 ms-3"
+                                      href="#"
+                                      class="text-decoration-none"
+                                      >Register</a
+                                    >
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <!-- Button trigger modal PRISIJUNGIMAS Navbare -->
+                    <div class="d-lg-none">
+                      <a
+                        href="#"
+                        class="nav-link"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal4"
+                      >
+                        Prisijungimas
+                      </a>
+                    </div>
+
+                    <!-- PRISIJUNGIMO MODAL Navbar-->
+                    <div
+                      class="modal fade"
+                      id="exampleModal4"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog">
+                        <div class="modal-content p-0">
+                          <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel4">
+                              Prisijungimas
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <div class="modal-body">
+                            <div class="container mt-5 mb-5">
+                              <div class="wrapper">
+                                <div class="card">
+                                  <form action="#" class="d-flex flex-column">
+                                    <div class="h3 text-center text-white">
+                                      Login
+                                    </div>
+                                    <div
+                                      class="
+                                        d-flex
+                                        align-items-center
+                                        input-field
+                                        my-3
+                                        mb-4
+                                      "
+                                    >
+
+                                      <input
+                                        type="text"
+                                        placeholder="Username or Email"
+                                        required
+                                        class="form-control"
+                                      />
+                                    </div>
+                                    <div
+                                      class="
+                                        d-flex
+                                        align-items-center
+                                        input-field
+                                        mb-4
+                                      "
+                                    >
+                                      <input
+                                        type="password"
+                                        placeholder="Password"
+                                        required
+                                        class="form-control"
+                                        id="pwdprisijungimas"
+                                      />
+                                      <div class="my-3">
+                                        <input
+                                          type="submit"
+                                          value="Login"
+                                          class="btn btn-login btn-primary"
+                                        />
+                                      </div>
+                                    </div>
+
+                                    <div class="container">
+                                      <div class="row justify-content-between">
+                                        <div>
+                                          <a href="#">Forgot password?</a>
+                                        </div>
+                                        <div><a href="#">Sign Up</a></div>
+                                      </div>
+                                    </div>
+                                  </form>
+
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
                 </ul>
+                <!-- Button trigger modal REGISTRACIJA -->
+                <div class="d-none d-lg-block">
+                  <button
+                    type="button"
+                    class="btn btn-warning me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal"
+                  >
+                    Registracija
+                  </button>
+                </div>
+
+                <!-- REGISTRACIJOS Modal -->
+                <div
+                  class="modal fade"
+                  id="exampleModal"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content p-0">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">
+                          Registracija
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container mt-5 mb-5">
+                          <div
+                            class="
+                              row
+                              d-flex
+                              align-items-center
+                              justify-content-center
+                            "
+                          >
+                            <div class="col-md-12">
+                              <div class="card px-5 py-5">
+                                <div class="form-input">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="Email address"
+                                  />
+                                </div>
+                                <div class="form-input">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="User name"
+                                  />
+                                </div>
+                                <div class="form-input">
+                                  <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="password"
+                                  />
+                                </div>
+                                <a
+                                  class="mt-3 ms-3"
+                                  href="#"
+                      
+                                  >Register</a
+                                >
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Button trigger modal PRISIJUNGIMAS -->
+                <div class="d-none d-lg-block">
+                  <button
+                    type="button"
+                    class="btn btn-danger me-3"
+                    data-bs-toggle="modal"
+                    data-bs-target="#exampleModal1"
+                  >
+                    Prisijungimas
+                  </button>
+                </div>
+
+                <!-- PRISIJUNGIMO MODAL-->
+                <div
+                  class="modal fade"
+                  id="exampleModal1"
+                  tabindex="-1"
+                  aria-labelledby="exampleModalLabel"
+                  aria-hidden="true"
+                >
+                  <div class="modal-dialog">
+                    <div class="modal-content p-0">
+                      <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel1">
+                          Prisijungimas
+                        </h5>
+                        <button
+                          type="button"
+                          class="btn-close"
+                          data-bs-dismiss="modal"
+                          aria-label="Close"
+                        ></button>
+                      </div>
+                      <div class="modal-body">
+                        <div class="container mt-5 mb-5">
+                          <div class="wrapper">
+                            <div class="card">
+                              <form action="#" class="d-flex flex-column">
+                                <div class="h3 text-center text-white">
+                                  Login
+                                </div>
+                                <div
+                                  class="
+                                    d-flex
+                                    align-items-center
+                                    input-field
+                                    my-3
+                                    mb-4
+                                  "
+                                >
+                                  <span class="far fa-user p-2"></span>
+                                  <input
+                                    type="text"
+                                    placeholder="Username or Email"
+                                    required
+                                    class="form-control"
+                                  />
+                                </div>
+                                <div
+                                  class="
+                                    d-flex
+                                    align-items-center
+                                    input-field
+                                    mb-4
+                                  "
+                                >
+                                  <span class="fas fa-lock p-2"></span>
+                                  <input
+                                    type="password"
+                                    placeholder="Password"
+                                    required
+                                    class="form-control"
+                                    id="pwd"
+                                  />
+                                  <div class="my-3">
+                                    <input
+                                      type="submit"
+                                      value="Login"
+                                      class="btn btn-login btn-primary"
+                                    />
+                                  </div>
+                                </div>
+
+                                <div class="container">
+                                  <div class="row justify-content-between">
+                                    <div>
+                                      <a href="#">Forgot password?</a>
+                                    </div>
+                                    <div><a href="#">Sign Up</a></div>
+                                  </div>
+                                </div>
+                              </form>
+                              <div
+                                class="
+                                  position-relative
+                                  border-bottom
+                                  my-3
+                                  line
+                                "
+                              >
+                                <span class="connect">or connect with</span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
                 <div class="dropdown d-none d-lg-block">
                   <button
                     class="btn btn-secondary dropdown-toggle"
@@ -163,13 +528,13 @@
               </div>
             </div>
           </nav>
-        </div>
-      </div>
+        <!-- </div>
+      </div> -->
     </header>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h1>Products</h1>
+          <h1 class="mt-3 mb-3">Products</h1>
 
           <ul>
             <li>Ekranuose nuo 1200px plocio, turetume rodyti 2 stulpelius</li>
